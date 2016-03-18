@@ -3,3 +3,4 @@ use_frameworks!
 
 pod 'Alamofire', '~>3.2.1'
 pod 'ObjectMapper', '~> 1.1.5'
+pod 'MBProgressHUD', '~> 0.9.2'
