@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5F7001981C701739000DD50D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7001971C701739000DD50D /* AppDelegate.swift */; };
-		5F70019A1C701739000DD50D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7001991C701739000DD50D /* ViewController.swift */; };
 		5F70019D1C701739000DD50D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F70019B1C701739000DD50D /* Main.storyboard */; };
 		5F70019F1C701739000DD50D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F70019E1C701739000DD50D /* Assets.xcassets */; };
 		5F7001A21C701739000DD50D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7001A01C701739000DD50D /* LaunchScreen.storyboard */; };
-		5F7001AF1C71C5F1000DD50D /* AFDataAccessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7001AE1C71C5F1000DD50D /* AFDataAccessRequest.swift */; };
 		5F7001B31C73012B000DD50D /* MacroDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7001B21C73012B000DD50D /* MacroDefine.swift */; };
-		5F7001B71C7303E9000DD50D /* AFLibraryAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7001B61C7303E9000DD50D /* AFLibraryAssistant.swift */; };
+		5F913F4E1C9AB14700E63AFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F913F491C9AB14700E63AFA /* ViewController.swift */; };
+		5F913F4F1C9AB14700E63AFA /* AFDataAccessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F913F4B1C9AB14700E63AFA /* AFDataAccessRequest.swift */; };
+		5F913F501C9AB14700E63AFA /* AFLibraryAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F913F4C1C9AB14700E63AFA /* AFLibraryAssistant.swift */; };
+		5F913F521C9AB18400E63AFA /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F913F511C9AB18400E63AFA /* BaseModel.swift */; };
+		5F913F541C9AB5D600E63AFA /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F913F531C9AB5D600E63AFA /* ProductModel.swift */; };
 		789267715E67363AC5D7112F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1A73A4F8B4B6E03A853BC9 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,14 +24,16 @@
 		5F1A73A4F8B4B6E03A853BC9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7001941C701739000DD50D /* AlamofileDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofileDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7001971C701739000DD50D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F7001991C701739000DD50D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F70019C1C701739000DD50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F70019E1C701739000DD50D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F7001A11C701739000DD50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F7001A31C701739000DD50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F7001AE1C71C5F1000DD50D /* AFDataAccessRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFDataAccessRequest.swift; sourceTree = "<group>"; };
 		5F7001B21C73012B000DD50D /* MacroDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroDefine.swift; sourceTree = "<group>"; };
-		5F7001B61C7303E9000DD50D /* AFLibraryAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFLibraryAssistant.swift; sourceTree = "<group>"; };
+		5F913F491C9AB14700E63AFA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F913F4B1C9AB14700E63AFA /* AFDataAccessRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFDataAccessRequest.swift; sourceTree = "<group>"; };
+		5F913F4C1C9AB14700E63AFA /* AFLibraryAssistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFLibraryAssistant.swift; sourceTree = "<group>"; };
+		5F913F511C9AB18400E63AFA /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		5F913F531C9AB5D600E63AFA /* ProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		98E5CF23760D9DB607749878 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BE485A0E04BB9869F8963D35 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,10 +71,10 @@
 		5F7001961C701739000DD50D /* AlamofileDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5F7001991C701739000DD50D /* ViewController.swift */,
-				5F7001AE1C71C5F1000DD50D /* AFDataAccessRequest.swift */,
-				5F7001B61C7303E9000DD50D /* AFLibraryAssistant.swift */,
 				5F7001B21C73012B000DD50D /* MacroDefine.swift */,
+				5F913F4A1C9AB14700E63AFA /* DataAccesserLayer */,
+				5F913F481C9AB14700E63AFA /* Controllers */,
+				5F913F4D1C9AB14700E63AFA /* Models */,
 				5F7001A91C705098000DD50D /* others */,
 			);
 			path = AlamofileDemo;
@@ -86,6 +90,32 @@
 				5F7001A31C701739000DD50D /* Info.plist */,
 			);
 			name = others;
+			sourceTree = "<group>";
+		};
+		5F913F481C9AB14700E63AFA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F913F491C9AB14700E63AFA /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5F913F4A1C9AB14700E63AFA /* DataAccesserLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5F913F4B1C9AB14700E63AFA /* AFDataAccessRequest.swift */,
+				5F913F4C1C9AB14700E63AFA /* AFLibraryAssistant.swift */,
+			);
+			path = DataAccesserLayer;
+			sourceTree = "<group>";
+		};
+		5F913F4D1C9AB14700E63AFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F913F511C9AB18400E63AFA /* BaseModel.swift */,
+				5F913F531C9AB5D600E63AFA /* ProductModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B22AF780387D3408F96EE283 /* Pods */ = {
@@ -227,11 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F7001AF1C71C5F1000DD50D /* AFDataAccessRequest.swift in Sources */,
+				5F913F521C9AB18400E63AFA /* BaseModel.swift in Sources */,
+				5F913F4F1C9AB14700E63AFA /* AFDataAccessRequest.swift in Sources */,
+				5F913F4E1C9AB14700E63AFA /* ViewController.swift in Sources */,
 				5F7001B31C73012B000DD50D /* MacroDefine.swift in Sources */,
-				5F70019A1C701739000DD50D /* ViewController.swift in Sources */,
 				5F7001981C701739000DD50D /* AppDelegate.swift in Sources */,
-				5F7001B71C7303E9000DD50D /* AFLibraryAssistant.swift in Sources */,
+				5F913F541C9AB5D600E63AFA /* ProductModel.swift in Sources */,
+				5F913F501C9AB14700E63AFA /* AFLibraryAssistant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
