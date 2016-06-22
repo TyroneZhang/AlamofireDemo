@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jg-QI-kPr">
+                                <rect key="frame" x="20" y="34" width="60" height="30"/>
+                                <state key="normal" title="开始下载"/>
+                                <connections>
+                                    <action selector="startDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cb1-K7-R0u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEX-Ho-qy0">
+                                <rect key="frame" x="137" y="34" width="60" height="30"/>
+                                <state key="normal" title="暂停下载"/>
+                                <connections>
+                                    <action selector="stopDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NVL-KA-1Ip"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pyY-Hw-Yrs">
+                                <rect key="frame" x="20" y="106" width="560" height="2"/>
+                            </progressView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rEX-Ho-qy0" firstAttribute="centerY" secondItem="2jg-QI-kPr" secondAttribute="centerY" id="J3V-Bu-ptr"/>
+                            <constraint firstItem="2jg-QI-kPr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Sea-OP-xJN"/>
+                            <constraint firstItem="pyY-Hw-Yrs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WEk-Ti-Kmq"/>
+                            <constraint firstItem="rEX-Ho-qy0" firstAttribute="leading" secondItem="2jg-QI-kPr" secondAttribute="trailing" constant="57" id="Yy9-Dd-lc5"/>
+                            <constraint firstItem="pyY-Hw-Yrs" firstAttribute="top" secondItem="rEX-Ho-qy0" secondAttribute="bottom" constant="42" id="hc3-sE-fKl"/>
+                            <constraint firstItem="pyY-Hw-Yrs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="s46-IA-LqB"/>
+                            <constraint firstItem="2jg-QI-kPr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="xL7-SS-A4k"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressView" destination="pyY-Hw-Yrs" id="k0a-YN-Ejj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="153" y="426"/>
         </scene>
     </scenes>
 </document>
